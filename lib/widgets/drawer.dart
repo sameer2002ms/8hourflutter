@@ -12,14 +12,14 @@ class MyDrawer extends StatelessWidget {
         "nqGp7E2+5YTtzmTUCDMck+1L8/03RdVV1v2+wLa+wADKlHFW2Hrenf0mMlBL2WzW7b65eQ90c+MGQN880UgjjTTSSCONNNJI35Hc36vGemcY343GJr5Xjci+PQlkXuGDeyw+mPAFvN5A96Xwkc878a2IJ/N2vBPeYo5/3MgJzQ+wTV+xI7L4WN/EMtv4ZtB4Mh9gCBQCs08nAk9j9Ubg6dOn3lkqf5t3d26oAEX5vMBsshTVaLK5e4nmhf+8wkNeQsy8+dlAoZ4vUPV8vXmby+cLjVvWXfBRnWy9ns2yOXeWzS5nG41hx8y77IXNAwKflyHAhPiJF+ggyz7fMviXW/Z5uS9SsomnhVyTrfuazSYVaxYLOYqts7HiTfa2cxtzUzn3LQtilm0EvMMF89aL7LLXV2zkcsve5Tzb8BW9gSKbm/AVl3PLy0XwX+fGWy+A1hbYTp6tNwudvPDLF8h8HRY8x7JNNhCoN/Kzvkae9c1SlLt+u+ymfO6b4iyVdbNPh8oFenqh2bnNFzrgXwF8sLeder3eKeRjHfC5kAdJ1mnkqUb9FjwNjhfZZiHPFgJSsgnfbd1byDVy+WKx0+zUc/kO+zRfKLiL2cZN/hZkZr2Rnc0Wh52LDdAzGvlOky0U6hNNAFIHhPV8DgapAL/UqdvGbaNQZ5tN9hYkG2h3voeMLQZy9bo3V6gH2BjAzzV8jULBG2iws4VmbLaTLzZjnc7Q7SPnKxZ9DW+xmMsB017ONSYC4EsRPAbPTORy4GCx0wk0vI1Z8EQDvtg3ISODI5U3EOA+fNxAxn0PPvngU/CZgBWjGWd5vF0IniF5PHH37cTd4Ykesu9OI7JvT98v2f8DBF7fJpoAVTgAAAAASUVORK5CYII=";
     return Drawer(
       child: Container(
-        color: Colors.amber,
+        color: Colors.white,
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
             DrawerHeader(
               padding: EdgeInsets.zero,
               child: UserAccountsDrawerHeader(
-                decoration: BoxDecoration(color: Colors.amber),
+                decoration: BoxDecoration(color: Colors.white),
                 accountName: Text("Mohd Sameer"),
                 accountEmail: Text("sameer2002.ms@gmail.com"),
                 //to get the image the from internet
@@ -33,34 +33,34 @@ class MyDrawer extends StatelessWidget {
             ListTile(
                leading: Icon(
                 CupertinoIcons.home,
-                color: Colors.white,
+                color: Colors.black,
               ),
               title: Text(
                 "Home",
                 textScaleFactor: 1.2,
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(color: Colors.black),
               ),
             ),
             ListTile(
               leading: Icon(
                 CupertinoIcons.settings,
-                color: Colors.white,
+                color: Colors.black,
               ),
               title: Text(
                 "Setting",
                 textScaleFactor: 1.2,
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(color: Colors.black),
               ),
             ),
             ListTile(
               leading: Icon(
                 CupertinoIcons.share,
-                color: Colors.white,
+                color: Colors.black,
               ),
               title: Text(
                 "Share",
                 textScaleFactor: 1.2,
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(color: Colors.black),
               ),
             ),
           ],
