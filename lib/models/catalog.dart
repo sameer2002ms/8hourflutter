@@ -1,15 +1,12 @@
 class CatalogModel {
-  static final items = [
+  static List<Item> items = [
     Item(
         id: 1,
         name: "iPhone 12",
         disc: "Latest Apple iPhone 12",
         price: 99999,
         color: "#33505a",
-        image: "data:image/jpeg;base64,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"
-            "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH//Z"
-    )
+        image: "http://placehold.it/940x300/999/CCC")
   ];
 }
 
@@ -21,7 +18,32 @@ class Item {
   final String color;
   final String image;
 
-  Item({required this.id, required this.name, required this.disc, required this.price, required this.color, required this.image});
+  Item(
+      {required this.id,
+      required this.name,
+      required this.disc,
+      required this.price,
+      required this.color,
+      required this.image});
 
+  //here we have load and decode the json data using map
+  factory Item.fromMap(Map<dynamic, dynamic> map) {
+    return Item(
+      id: map["id"],
+      name: map["name"],
+      disc: map["disc"],
+      price: map["price"],
+      color: map["color"],
+      image: map["image"],
+    );
+  }
+
+  toMap() => {
+        "id": id,
+        "name": name,
+        "disc": disc,
+        "price": price,
+        "color": color,
+        "image": image,
+      };
 }
-

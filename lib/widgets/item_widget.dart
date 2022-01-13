@@ -10,12 +10,23 @@ class ItemWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      leading: CircleAvatar(backgroundImage: NetworkImage(item.image),
-     ),
-      title: Text(item.name),
-      subtitle: Text(item.disc),
-      trailing: Text("\$${item.price}"),
+    return Card(
+      elevation: 0,
+      child: ListTile(
+        onTap: (){},
+        leading: CircleAvatar(backgroundImage: NetworkImage(item.image),
+       ),
+        title: Text(item.name),
+        subtitle: Text(item.disc),
+        trailing: Text("\$${item.price}",
+       textScaleFactor: 1.1,
+       style: TextStyle(
+
+         color: Colors.red,
+         fontWeight: FontWeight.bold
+       ),
+        ),
+      ),
     );
   }
 }
