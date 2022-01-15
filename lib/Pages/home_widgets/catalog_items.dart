@@ -37,9 +37,10 @@ class CatalogItem extends StatelessWidget {
                         ElevatedButton(onPressed: (){},
                           //here we have given the shape to button
                           style: ButtonStyle(
+                            backgroundColor: MaterialStateProperty.all(context.theme.buttonColor),
                               shape: MaterialStateProperty.all(StadiumBorder())
                           ),
-                          child: "Buy".text.make(),)
+                          child: "Add to Cart".text.color(Colors.white).make(),)
                       ],
                     ).pOnly(right: 10.0)
 
@@ -47,6 +48,6 @@ class CatalogItem extends StatelessWidget {
                 ))
 
           ],
-        )).white.roundedLg.square(130).make().py4();
+        )).color(context.cardColor).rounded.square(120).make().py4();
   }
 }

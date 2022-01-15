@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:full_futter_course/utils/routes.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:velocity_x/src/extensions/context_ext.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -29,7 +30,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Material(
-        color: Colors.white,
+        color: context.canvasColor,
         child: SingleChildScrollView(
           child: Form(
             key: _formKey,
@@ -46,7 +47,7 @@ class _LoginPageState extends State<LoginPage> {
                 Text("Welcome $name",
                     style: TextStyle(
                         fontSize: 28,
-                        color: Colors.deepPurple,
+                        color: Colors.white,
                         fontWeight: FontWeight.bold)),
                 SizedBox(
                   height: 20.0,
@@ -117,7 +118,7 @@ class _LoginPageState extends State<LoginPage> {
                                       fontSize: 18),
                                 ),
                           decoration: BoxDecoration(
-                            color: Colors.amber,
+                            color: context.theme.buttonColor,
                             borderRadius:
                                 BorderRadius.circular(changebutton ? 20 : 8),
                           ),

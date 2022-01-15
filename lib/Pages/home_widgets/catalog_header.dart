@@ -15,7 +15,7 @@ class CatalogHeader extends StatelessWidget {
           children: [
             // SizedBox(height: 2),
             //here we have increase the size and made it bold
-            "Catalog App".text.xl3.bold.color(Colors.amber).make(),
+            "Catalog App".text.xl3.bold.color(context.theme.buttonColor).make(),
             "Trending Products".text.xl2.make(),
 
           ],

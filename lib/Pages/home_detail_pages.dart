@@ -13,27 +13,33 @@ class HomeDetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.transparent,
         elevation: 0,
       ),
-      backgroundColor: Vx.coolGray100,
-      bottomNavigationBar:
-          Container(
-            color: Colors.white,
-            child: ButtonBar(
-              alignment: MainAxisAlignment.spaceBetween,
-              buttonPadding: EdgeInsets.zero,
-              children: [
-                "\$${catalog.price}".text.xl2.bold.make().pOnly(left: 10, bottom: 5),
-                ElevatedButton(onPressed: (){},
-                  //here we have given the shape to button
-                  style: ButtonStyle(
-                      shape: MaterialStateProperty.all(StadiumBorder())
-                  ),
-                  child: "Buy".text.xl.make(),).wh(100, 50)
-              ],
-            ).p32(),
-          ),
-
+      backgroundColor: context.canvasColor,
+      bottomNavigationBar: Container(
+        color: context.cardColor,
+        child: ButtonBar(
+          alignment: MainAxisAlignment.spaceBetween,
+          buttonPadding: EdgeInsets.zero,
+          children: [
+            "\$${catalog.price}"
+                .text
+                .xl2
+                .bold
+                .make()
+                .pOnly(left: 10, bottom: 5),
+            ElevatedButton(
+              onPressed: () {},
+              //here we have given the shape to button
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(context.theme.buttonColor),
+                  shape: MaterialStateProperty.all(StadiumBorder())),
+              child: "Add to Cart".text.color(Colors.white).xl.make(),
+            ).wh(130, 50)
+          ],
+        ).p32(),
+      ),
       body: SafeArea(
         bottom: false,
         child: Column(
@@ -50,17 +56,20 @@ class HomeDetailPage extends StatelessWidget {
               edge: VxEdge.TOP,
               arcType: VxArcType.CONVEY,
               child: Container(
-                color: Colors.white,
+                color: context.cardColor,
                 width: context.screenWidth,
                 child: Column(
                   children: [
                     catalog.name.text.xl3.bold.make().pOnly(
                           left: 10,
                         ),
-                    catalog.disc.text.xl.make().pOnly(
-                          left: 10,
-                        ),
+                    catalog.disc.text.xl.make(),
                     10.heightBox,
+                    "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
+                        .text
+                        .xl
+                        .make()
+                        .p16()
                   ],
                 ).py64(),
               ),
