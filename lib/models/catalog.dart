@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class CatalogModel {
   static List<Item> items = [
     Item(
@@ -8,6 +10,13 @@ class CatalogModel {
         color: "#33505a",
         image: "http://placehold.it/940x300/999/CCC")
   ];
+
+  //get item by ID
+   Item getById(int id) =>
+      items.firstWhere((element) => element.id == id, orElse: null);
+  //get item by position
+  Item getByPosition(int pos) => items[pos];
+
 }
 
 class Item {
