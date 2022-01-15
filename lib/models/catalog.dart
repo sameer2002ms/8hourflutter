@@ -4,7 +4,7 @@ class CatalogModel {
         id: 1,
         name: "iPhone 12",
         disc: "Latest Apple iPhone 12",
-        price: 99999,
+        price: "99999",
         color: "#33505a",
         image: "http://placehold.it/940x300/999/CCC")
   ];
@@ -14,7 +14,7 @@ class Item {
   final int id;
   final String name;
   final String disc;
-  final num price;
+  final String price;
   final String color;
   final String image;
 

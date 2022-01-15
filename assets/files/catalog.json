@@ -1,37 +1,51 @@
 [{
   "id": 1,
-  "name": "hero Product",
-  "disc": "Lorem ipsum dolor sit amet",
-  "price": "99",
+  "name": "iPhone 12",
+  "disc": "Apple latest iPhone in 2021",
+  "price": "99999",
   "color": "#33505a",
-  "image": "http://placehold.it/940x300/999/CCC"
+  "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone11-black-select-2019_GEO_EMEA?wid=940&hei=1112&fmt=png-alpha&.v=1567021766023"
 },{
   "id": 2,
-  "name": "hero Product",
-  "disc": "Lorem ipsum dolor sit amet",
-  "price": "99",
+  "name": "Samsung F42 5g",
+  "disc": "Latest Samsung SmartPhone in 2021",
+  "price": "70000",
   "color": "#33505a",
-  "image": "http://placehold.it/940x300/999/CCC"
+  "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone11-black-select-2019_GEO_EMEA?wid=940&hei=1112&fmt=png-alpha&.v=1567021766023"
 },{
   "id": 3,
-  "name": "hero Product",
-  "disc": "Lorem ipsum dolor sit amet",
-  "price": "99",
+  "name": "Asus",
+  "disc": "Latest Samsung SmartPhone in 2021",
+  "price": "68968",
   "color": "#33505a",
-  "image": "http://placehold.it/940x300/999/CCC"
+  "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone11-black-select-2019_GEO_EMEA?wid=940&hei=1112&fmt=png-alpha&.v=1567021766023"
 },{
   "id": 4,
-  "name": "hero Product",
-  "disc": "Lorem ipsum dolor sit amet",
-  "price": "99",
+  "name": "Realme",
+  "disc": "Cheapest and latest smartphone in 2021",
+  "price": "9900",
   "color": "#33505a",
-  "image": "http://placehold.it/940x300/999/CCC"
+  "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone11-black-select-2019_GEO_EMEA?wid=940&hei=1112&fmt=png-alpha&.v=1567021766023"
 },{
   "id": 5,
-  "name": "hero Product",
-  "disc": "Lorem ipsum dolor sit amet",
-  "price": "99",
+  "name": "Realme",
+  "disc": "Cheapest and latest smartphone in 2021",
+  "price": "9900",
   "color": "#33505a",
-  "image": "http://placehold.it/940x300/999/CCC"
+  "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone11-black-select-2019_GEO_EMEA?wid=940&hei=1112&fmt=png-alpha&.v=1567021766023"
+},{
+  "id": 6,
+  "name": "Realme",
+  "disc": "Cheapest and latest smartphone in 2021",
+  "price": "9900",
+  "color": "#33505a",
+  "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone11-black-select-2019_GEO_EMEA?wid=940&hei=1112&fmt=png-alpha&.v=1567021766023"
+},{
+  "id": 7,
+  "name": "Redmi",
+  "disc": "Cheapest and latest smartphone in 2021",
+  "price": "9559",
+  "color": "#33505a",
+  "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone11-black-select-2019_GEO_EMEA?wid=940&hei=1112&fmt=png-alpha&.v=1567021766023"
 }
 ]

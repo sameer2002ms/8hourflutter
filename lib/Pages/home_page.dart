@@ -1,10 +1,12 @@
 import 'dart:convert';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:full_futter_course/main.dart';
+import 'package:velocity_x/velocity_x.dart';
 import 'package:full_futter_course/models/catalog.dart';
-import 'package:full_futter_course/widgets/drawer.dart';
-import 'package:full_futter_course/widgets/item_widget.dart';
+
+import 'home_widgets/catalog_header.dart';
+import 'home_widgets/catalog_list.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -25,37 +27,35 @@ class _HomePageState extends State<HomePage> {
 
   loadData() async {
     final CatalogJson =
-        await rootBundle.loadString("assets/files/catalog.json");
+        await rootBundle.loadString('assets/files/catalog.json');
     //here we will be decode the Json code
     final decodeData = jsonDecode(CatalogJson);
-    var productdata = decodeData["products"];
+
+    // var productdata = decodeData["products"];
     CatalogModel.items =
-        List.from(productdata).map<Item>((item) => Item.fromMap(item)).toList();
+        List.from(decodeData).map<Item>((item) => Item.fromMap(item)).toList();
 
     setState(() {});
   }
 
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        // backgroundColor: Colors.white,
-        // elevation: 0.0,
-        // iconTheme: IconThemeData(color: Colors.black),
-        title: Text('8 Hour Flutter Tutorial'),
+      backgroundColor: Vx.coolGray100,
+      body: SafeArea(
+        child: Container(
+          padding: Vx.m20,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              CatalogHeader(),
+              if (CatalogModel.items != null && CatalogModel.items.isNotEmpty)
+                CatalogList().expand()
+              else
+                CircularProgressIndicator().centered().py16().expand(),
+            ],
+          ),
+        ),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(10.0),
-        //here we have shown the list of items from the calatog.dart
-        child: ListView.builder(
-            itemCount: CatalogModel.items.length,
-            itemBuilder: (context, index) {
-              return ItemWidget(
-                item: CatalogModel.items[index],
-              );
-            }),
-      ),
-      //it is used to add navigator or footer
-      drawer: MyDrawer(),
     );
   }
 }
