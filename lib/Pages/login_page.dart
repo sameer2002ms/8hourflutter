@@ -40,6 +40,8 @@ class _LoginPageState extends State<LoginPage> {
                   "assets/images/login_image.png",
                   fit: BoxFit.cover,
                 ),
+
+
                 //used to give padding
                 SizedBox(
                   height: 20.0,
@@ -47,7 +49,7 @@ class _LoginPageState extends State<LoginPage> {
                 Text("Welcome $name",
                     style: TextStyle(
                         fontSize: 28,
-                        color: Colors.white,
+                        color: Colors.pink,
                         fontWeight: FontWeight.bold)),
                 SizedBox(
                   height: 20.0,

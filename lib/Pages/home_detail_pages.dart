@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:full_futter_course/models/catalog.dart';
 import 'package:velocity_x/velocity_x.dart';
 
+import '../utils/routes.dart';
+
 class HomeDetailPage extends StatelessWidget {
   final Item catalog;
 
@@ -30,7 +32,7 @@ class HomeDetailPage extends StatelessWidget {
                 .make()
                 .pOnly(left: 10, bottom: 5),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () => Navigator.pushNamed(context, Myroutes.AddtocartButton),
               //here we have given the shape to button
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all(context.theme.buttonColor),

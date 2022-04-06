@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         // home: HomePage(),
       // it is used to change the theme of the app
-      themeMode: ThemeMode.light,
+      themeMode: ThemeMode.dark,
       theme: MyTheme.lightTheme(context),
       //this is for the dark theme
       darkTheme: MyTheme.darkTheme(context),
@@ -28,10 +28,11 @@ class MyApp extends StatelessWidget {
       // initialRoute: "/login",
       routes: {
           //this is the default route
-          "/" : (context) => HomePage(),
+          "/" : (context) => LoginPage(),
         Myroutes.HomeRoute : (context) => HomePage(),
         Myroutes.loginRoute : (context) => LoginPage(),
         Myroutes.CartRoute : (context) => CartPage(),
+        Myroutes.AddtocartButton : (context) => CartPage(),
 
 
       },

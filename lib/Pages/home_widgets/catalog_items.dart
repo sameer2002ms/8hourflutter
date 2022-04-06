@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:full_futter_course/models/catalog.dart';
 import 'package:velocity_x/velocity_x.dart';
+import '../../utils/routes.dart';
 import 'catalog_image.dart';
 
 class CatalogItem extends StatelessWidget {
@@ -34,7 +35,8 @@ class CatalogItem extends StatelessWidget {
                       buttonPadding: EdgeInsets.zero,
                       children: [
                         "\$${catalog.price}".text.bold.make().pOnly(left: 10, bottom: 5),
-                        ElevatedButton(onPressed: (){},
+                        ElevatedButton(onPressed: () => Navigator.pushNamed(context, Myroutes.AddtocartButton),
+
                           //here we have given the shape to button
                           style: ButtonStyle(
                             backgroundColor: MaterialStateProperty.all(context.theme.buttonColor),

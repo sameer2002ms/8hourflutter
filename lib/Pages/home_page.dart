@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:full_futter_course/Pages/cart_page.dart';
 import 'package:full_futter_course/utils/routes.dart';
+import 'package:full_futter_course/widgets/drawer.dart';
 import 'package:velocity_x/velocity_x.dart';
 import 'package:full_futter_course/models/catalog.dart';
 
@@ -42,6 +43,7 @@ class _HomePageState extends State<HomePage> {
 
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: MyDrawer(),
       backgroundColor: context.canvasColor,
       floatingActionButton: FloatingActionButton(
         onPressed: () => Navigator.pushNamed(context, Myroutes.CartRoute),
