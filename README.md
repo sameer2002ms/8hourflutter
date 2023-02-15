@@ -8,8 +8,17 @@ This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+LIGHT UI
+
+![Shop_Ui_Light_AdobeExpress](https://user-images.githubusercontent.com/76088993/219073981-cac704af-f128-47ef-bc8d-f1fe5fb974ce.gif)
+
+
+DARK UI
+
+![Shopping_UI_Dark_AdobeExpress](https://user-images.githubusercontent.com/76088993/219074015-a964bce0-355b-4608-abc5-ce6745f65e6b.gif)
+
+
+
 
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
